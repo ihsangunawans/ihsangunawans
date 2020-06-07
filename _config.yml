@@ -1,16 +1,16 @@
 # Site settings
-title: Adhy Suryadi
-subtitle: "Coretan kisah sebuah kehidupan"
+title: Ihsan Gunawans
+subtitle: "Official Blog Of Ihsan Gunawans"
 header-img: img/home-bg.jpg
 image: img/home-bg.jpg
-copyright_name: Adhy Suryadi
-description: "Coretan kisah sebuah kehidupan, berbagi dengan sesama tentang pengalaman hidup."
-url: "https://adhysuryadi.com"
-author: Adhy Suryadi
-twitter_username: adhysuryadiii
-github_username:  KompiAjaib
-facebook_username:  adhysuryadiii
-email_username:  kompiajaib@gmail.com
+copyright_name: Ihsan Gunawans
+description: "Hanya seorang petani yang berusaha menanam kebaikan."
+url: "https://ihsangunawans.github.io"
+author: Ihsan Gunawans
+twitter_username: ihsangunawans
+github_username:  ihsangunawans
+facebook_username:  ihsangunawans
+email_username:  
 
 # Build settings
 markdown: kramdown
