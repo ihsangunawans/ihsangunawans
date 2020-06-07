@@ -1,14 +1,14 @@
-title:              Clean Blog
+title:              Ihsan Gunawans
 email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
+description:        Personal Blog Of Ihsan Gunawans
+author:             Ihsan Gunawans
 baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://blackrockdigital.github.io"
+url:                "https://ihsangunawans.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    BlackrockDigital
-facebook_username:  StartBootstrap
+twitter_username:   ihsangunawans
+github_username:    ihsangunawans
+facebook_username:  ihsangunawans
 linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
