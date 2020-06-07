@@ -1,4 +1,3 @@
-#[Adhy Suryadi Blog](https://adhysuryadi.com/)
 by Start Bootstrap - Jekyll Version. The official Jekyll version of the Adhy Suryadi Blog theme by [Start Bootstrap - Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/). Now with **Google AMP!** - Customized theme to valid AMP.
 
 ## Usage
