@@ -16,29 +16,38 @@ html,body{height: 100%;}
 
 .clear,.resik{clear:both} a:link{text-decoration:none}
   
-header {background: #2e3239;border-radius: 0 0 100px 0;padding: 10px 30px 14px 12px;transform:translateY(0);transition:all .4s ease;left:0;position:fixed;top:0;z-index:999}
+header {background: #2e3239;border-radius: 0 0 100px 0;padding: 14px 40px 18px 18px;transform:translateY(0);transition:all .4s ease;left:0;position:fixed;top:0;z-index:999}
 header h1 {padding: 0;font-size: 30px;margin: 0;}
 header h1 a:link,header h1 a:visited{color: #D5BE9A;}
 header p {font-size: 10px;padding: 0;margin: 0;color: #C3C2BC;} 
 
 main {background: #141215;min-height: 100%;}
 #nyenter {overflow:auto;padding-bottom:60px;}
-.gantipadding{height:69px;}
+.gantipadding{height:77px;}
 
-.enyong{float: left;clear: both;width: 515px;overflow: hidden;}
+.enyong{float: left;clear: both;width: 550px;overflow: hidden;}
 .enyong amp-img{width: 100%;height: auto;}
-.isine {float: left;width: 492px;text-align: center;}
-.buntelisi{padding:0 20px 0 0;}
-.isine p {font-size: 32px;cursor: pointer;font-weight: bold;color: #B29D76;text-align: center;}
-.isine a {color: #A19F96;cursor: pointer;font-size: 23px;line-height: 35px;}
   
-.memed{overflow: hidden;max-width: 310px;margin: 20px auto 0;} 
+.isine {float: left;width: calc(100% - 515px);text-align: center;display: flex;flex-direction: column;justify-content: center;height: 440px;padding: 0 0 75px;}
+.buntelisi{padding:0 36px 0 0;}
+.isine p {font-size: 32px;cursor: pointer;font-weight: bold;color: #B29D76;text-align: center;}
+.isine a {color: #A19F96;cursor: pointer;font-size: 23px;line-height: 35px;display:block}
+  
+.memed{overflow: hidden;max-width: 310px;margin: 20px auto 0;padding: 0 36px 0 0;} 
 #sos{background: #B29D76;width: 38px;border:2px solid #B29D76;height: 38px;border-radius: 50%;font-size: 22px;padding: 5px;line-height: 39px;text-align: center;float: left;margin: 5px;opacity:0.7;}
 #sos:hover{opacity:1;}
+.memed a{display:inline-block}
 
 .kabeh{height: 60px;clear: both;margin-top: -60px;position: relative;}
 .belog{position:relative;padding:21px 18px;color:#fff;display: block;text-align: center;background: #675437;}
 .belog:hover{background: #57452D;color: #E3E3E3;}
+  
+@media screen and (max-width:800px){
+.enyong {width: 400px;}
+.isine {width: calc(100% - 400px);height: 335px;padding: 0 0 65px;}
+.isine p {font-size: 27px;}
+.isine a {font-size: 20px;line-height: 1.3em;}
+}
 </style>
   
 <style amp-boilerplate='amp-boilerplate'>
