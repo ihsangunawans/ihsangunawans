@@ -1,10 +1,9 @@
 <head>    
-<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport"><link as="script" href="https://cdn.ampproject.org/v0.js" rel="preload"/><link as="image" href="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" rel="preload"/><link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"><link href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" hreflang="x-default" rel="alternate"/>
+<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport"><link as="script" href="https://cdn.ampproject.org/v0.js" rel="preload"/><link as="image" href="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" rel="preload"/><link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"><link href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" hreflang="x-default" rel="alternate"/>{% feed_meta %}
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% include favicon.html %}
 {% include open_graph.html %}
-{% feed_meta %}
 <style amp-custom>
 body{padding:0;margin:0;font-family:Sans-serif;}*{margin:0;padding:0;}a:link{text-decoration:none}.clear,.resik{clear:both} 
 #landing{background: #141215;}#landing header {background: #2e3239;border-radius: 0 0 100px 0;padding: 14px 40px 18px 18px;transform:translateY(0);transition:all .4s ease;left:0;position:fixed;top:0;z-index:999}#landing header h1 {padding: 0;font-size: 32px;margin: 0;color:#D5BE9A;}#landing header p {font-size: 11px;padding: 0;margin: 0;color: #C3C2BC;} 
