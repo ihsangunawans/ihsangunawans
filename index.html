@@ -10,20 +10,17 @@
 
 <style amp-custom>
 body{padding:0;margin:0;background: #141215;font-family:Sans-serif;}
-body:before {content:"";height:100%;float:left;width:0;margin-top:-32767px;}
-html,body{height: 100%;}
 * {margin:0;padding:0;}
 
 .clear,.resik{clear:both} a:link{text-decoration:none}
   
 header {background: #2e3239;border-radius: 0 0 100px 0;padding: 14px 40px 18px 18px;transform:translateY(0);transition:all .4s ease;left:0;position:fixed;top:0;z-index:999}
-header h1 {padding: 0;font-size: 30px;margin: 0;}
+header h1 {padding: 0;font-size: 32px;margin: 0;}
 header h1 a:link,header h1 a:visited{color: #D5BE9A;}
-header p {font-size: 10px;padding: 0;margin: 0;color: #C3C2BC;} 
+header p {font-size: 11px;padding: 0;margin: 0;color: #C3C2BC;} 
 
-main {background: #141215;min-height: 100%;}
-#nyenter {overflow:auto;padding-bottom:60px;}
-.gantipadding{height:77px;}
+main {background: #141215;}
+.gantipadding{height:81px;}
 
 .enyong{float: left;clear: both;width: 515px;overflow: hidden;}
 .enyong amp-img{width: 100%;height: auto;}
@@ -38,23 +35,31 @@ main {background: #141215;min-height: 100%;}
 #sos:hover{opacity:1;}
 .memed a{display:inline-block}
 
-.kabeh{height: 60px;clear: both;margin-top: -60px;position: relative;}
-.belog{position:relative;padding:21px 18px;color:#fff;display: block;text-align: center;background: #675437;}
+.kabeh{clear: both;width: 50%;margin: 0 auto 18px;}
+.belog{position:relative;padding: 18px;color:#fff;display: block;text-align: center;background: #675437;border-radius: 30px;}
 .belog:hover{background: #57452D;color: #E3E3E3;}
   
 @media screen and (max-width:800px){
+header h1 {font-size: 27px;}
+header p {font-size: 10px;}
+.gantipadding {height: 74px;}
 .enyong {width: 400px;}
 .isine {width: calc(100% - 400px);height: 335px;padding: 0 0 65px;}
 .isine p {font-size: 27px;}
 .isine a {font-size: 20px;line-height: 1.3em;}
 #sos {width: 33px;height: 33px;}
+.belog {padding: 16px 18px;}
 }
 @media screen and (max-width:640px){
+header h1 {font-size: 20px;}
+header p {font-size: 7px;}
+.gantipadding {height: 62px;}
 .enyong {width: 320px;}
 .isine {width: calc(100% - 320px);height: 270px;padding: 0 0 50px;}
 .isine p {font-size: 20px;}
 .isine a {font-size: 17px;line-height: 1.2em;}
 #sos {width: 27px;height: 27px;}
+.belog {padding: 12px 18px;}
 }  
   
 </style>
@@ -84,7 +89,6 @@ body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:non
 </header>
   
 <main>
-<div id='nyenter'>
 <div class='gantipadding'></div>
 <div class='resik'></div>
 <div class='enyong'>
@@ -108,7 +112,6 @@ body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:non
 </div></a>
 </div></div>
 <div class='resik'></div>
-</div>
 </main>
 
 <div class='kabeh'>
