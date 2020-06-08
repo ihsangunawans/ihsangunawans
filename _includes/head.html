@@ -3,6 +3,49 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <link href='/manifest.json' rel='manifest'/>
+
+{% if page.title %}<script type='application/ld+json'>
+{"@context": "http://schema.org","@graph":[{
+  "@type": "Webpage",
+  "url": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
+  "name": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+  "headline":"{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+  "description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+  },
+
+  "publisher": {
+    "@type": "Organization",
+    "name": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+    "logo": {
+        "url": "XXXXXXXXXXXXXXXXXXXXXXX",
+        "width": 600,
+        "height": 60,
+        "@type": "ImageObject"
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{site.url}}{{ site.baseurl }}/{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}",
+    "width": 1280,
+    "height": 720
+    }
+  },
+  {
+  "@type": "WebSite",
+  "url": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}search?q={q}",
+    "query-input": "required name=q"
+    }
+  }
+  ]
+}
+</script>{% endif %}
+
 {% include favicon.html %}
 {% include open_graph.html %}
 <style amp-custom>
