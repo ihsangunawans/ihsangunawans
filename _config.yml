@@ -1,16 +1,16 @@
 # Site settings
 title: Ihsan Gunawans
 subtitle: "Official Blog Of Ihsan Gunawans"
-header-img: img/home-bg.jpg
-image: img/home-bg.jpg
+header-img: img/bgberanda.jpg
+image: img/ihsangunawans-home.jpg
 copyright_name: Ihsan Gunawans
-description: "Hanya seorang petani yang berusaha untuk selalu menanam kebaikan."
+description: "Hanya Seorang Petani Yang Berusaha untuk Selalu Menanam Kebaikan."
 url: "https://ihsangunawans.github.io"
 author: Ihsan Gunawans
 twitter_username: ihsangunawans
-github_username:  ihsangunawans
-facebook_username:  ihsangunawans
-email_username:  
+github_username: ihsangunawans
+facebook_username: ihsangunawans
+email_username:  xxxxxxxxx@gmail.com
 
 # Build settings
 markdown: kramdown

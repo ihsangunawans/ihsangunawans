@@ -1,4 +1,8 @@
-by Start Bootstrap - Jekyll Version. The official Jekyll version of the Adhy Suryadi Blog theme by [Start Bootstrap - Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/). Now with **Google AMP!** - Customized theme to valid AMP.
+#[Official Blog Of Ihsan Gunawans](https://ihsangunawans.github.io/)
+by Start Bootstrap - Jekyll Version.
+The official Jekyll version of the Ihsan Gunawans Blog theme is from Adhy Suryadi Blog theme (https://adhysuryadi.com/)
+by [Start Bootstrap - Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/).
+Now with **Google AMP!** - Customized theme to valid AMP.
 
 ## Usage
 Fork the repo, rename to `username.github.io`, modify *_config* file, modify *CNAME* file with your domain or delete it, modify *about.html* file, *privacy.html* file, *robots.txt* file. Modify *clean-blog.min.js* file for Disqus and email contact form, *_includes*, *tag*, *webmaster.html*, *google_analytics.html*, *favicon.html* and replace all *the posts* and *images* with your data.
