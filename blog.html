@@ -15,8 +15,9 @@ description: "Hanya Petani Yang Berusaha untuk Selalu Menanam Kebaikan."
   <p>No posts found.</p>
 {% endunless %}
 
-{% for post in paginator.posts %}
+{% for post in site.tags[page.tag] %}
 <div class="post-preview">
+  <amp-auto-ads data-ad-client='ca-pub-xxxxxxxxx' type='adsense' hidden></amp-auto-ads>
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">            
             {{ post.title }}
@@ -38,4 +39,5 @@ description: "Hanya Petani Yang Berusaha untuk Selalu Menanam Kebaikan."
     </p>
 </div>
 <hr>
+{% endfor %}
 {% include adsense_index_bottom.html %}
