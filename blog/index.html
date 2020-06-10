@@ -3,16 +3,13 @@ layout: page
 subtitle: "The Official Blog Of Ihsan Gunawans."
 description: "Hanya Petani Yang Berusaha untuk Selalu Menanam Kebaikan."
 ---
-
-<hr>
-
+<div class='bloge'>
 {% for post in paginator.posts %}
-<div class="post-preview">
-<a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title">{{ post.title }}</h2></a>
-{% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>
+<div class="pose">
+<a href="{{ post.url | prepend: site.baseurl }}"><h2>{{ post.title }}</h2></a>
+{% if post.subtitle %}<h3>{{ post.subtitle }}</h3>
 {% endif %}
 </div>
-<hr>
 {% endfor %}
 
 <!-- Pager -->
@@ -26,3 +23,4 @@ description: "Hanya Petani Yang Berusaha untuk Selalu Menanam Kebaikan."
 {% endif %}
 </ul>
 {% endif %}
+</div>
