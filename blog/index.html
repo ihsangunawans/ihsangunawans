@@ -10,8 +10,13 @@ description: "Hanya Petani Yang Berusaha untuk Selalu Menanam Kebaikan."
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-{% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
 {% endfor %}
 
 <!-- Pagination links -->
