@@ -65,6 +65,6 @@ body{padding:0;margin:0;font-family:Sans-serif;}*{margin:0;padding:0;}a:link{tex
 </div>
 <div class='resik'></div>
 </main>
-<div class='kabeh'><a class='belog' title='My Blog' href='https://ihsangunawans.github.io/blog/'>WebLogKu</a></div>
+<div class='kabeh'><a class='belog' title='My Blog' href='{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}blog/'>WebLogKu</a></div>
 </body>
 </HTML>
