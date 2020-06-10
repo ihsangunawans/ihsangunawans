@@ -4,22 +4,12 @@ layout: default
 
 <section id='page'>
 
-<div class="post">
-<!-- Page Header -->
-<div class="intro-header">
-<amp-img noloading alt="Page Image" height="448" width="1423" src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"></amp-img>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1 class='post-title entry-title' itemprop='headline'><a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" title='{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}' itemprop='url mainEntityOfPage'>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</a></h1>
-                    <hr class="small">
-                    <span class="subheading">{{ page.subtitle }}</span>
-		</div>
-            </div>
-        </div>
-    </div>
+<div class="site-endas">
+<h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+<hr>
+<span>{{ page.subtitle }}</span>
 </div>
+
 <!-- Main Content -->
 <div class="container">
 <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
@@ -27,20 +17,16 @@ layout: default
   <meta content='1280' itemprop='width'>
   <meta content='720' itemprop='height'>
 </div>
-  <div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
-    <div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-      <meta content='{{site.url}}{{ site.baseurl }}/img/ihsangunawans_logo60.png' itemprop='url'/>
-      <meta content='600' itemprop='width'>
-      <meta content='60' itemprop='height'>
-    </div>
-    <meta content='{{ site.title }}' itemprop='name'>
-  </div>
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			{{ content }}
-			{% include adsense_page.html %}
-		</div>
-	</div>
+<div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
+ <div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+  <meta content='{{site.url}}{{ site.baseurl }}/img/ihsangunawans_logo60.png' itemprop='url'/>
+  <meta content='600' itemprop='width'>
+  <meta content='60' itemprop='height'>
+ </div>
+<meta content='{{ site.title }}' itemprop='name'>
 </div>
+
+{{ content }}
+
 </div>
 </section>
